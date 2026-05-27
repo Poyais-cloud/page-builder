@@ -1,0 +1,90 @@
+@import './base.css';
+
+html,
+body {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.el-button {
+  --el-border-radius-base: var(--radius-sm);
+  font-weight: 600;
+}
+
+.el-button--primary {
+  --el-button-bg-color: var(--color-primary);
+  --el-button-border-color: var(--color-primary);
+  --el-button-hover-bg-color: var(--color-primary-strong);
+  --el-button-hover-border-color: var(--color-primary-strong);
+  --el-button-active-bg-color: var(--color-primary-strong);
+  --el-button-active-border-color: var(--color-primary-strong);
+}
+
+.el-button--primary.is-plain {
+  --el-button-bg-color: var(--color-primary-soft);
+  --el-button-border-color: #c7d2cd;
+  --el-button-text-color: var(--color-primary-strong);
+  --el-button-hover-bg-color: var(--color-primary);
+  --el-button-hover-border-color: var(--color-primary);
+  --el-button-hover-text-color: #ffffff;
+}
+
+.el-button--success.is-plain {
+  --el-button-bg-color: var(--color-accent-soft);
+  --el-button-border-color: #dfc8ba;
+  --el-button-text-color: #835f54;
+  --el-button-hover-bg-color: var(--color-accent);
+  --el-button-hover-border-color: var(--color-accent);
+  --el-button-hover-text-color: #ffffff;
+}
+
+.el-switch.is-checked .el-switch__core {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.el-button + .el-button {
+  margin-left: 0;
+}
+
+.el-button-group > .el-button {
+  min-width: 36px;
+}
+
+.el-input__wrapper,
+.el-textarea__inner,
+.el-select__wrapper,
+.el-input-number .el-input__wrapper {
+  border-radius: var(--radius-sm);
+  box-shadow: 0 0 0 1px var(--color-border-soft) inset;
+}
+
+.el-input__wrapper:hover,
+.el-textarea__inner:hover,
+.el-select__wrapper:hover,
+.el-input-number .el-input__wrapper:hover {
+  box-shadow: 0 0 0 1px var(--color-border) inset;
+}
+
+.el-dialog {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.el-dialog__header {
+  margin: 0;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.el-dialog__body {
+  padding: 0;
+}
